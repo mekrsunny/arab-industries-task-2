@@ -1,0 +1,78 @@
+#app {
+  height: 100%;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+
+  background: #000;
+  margin: auto;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  color: #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 40px 60px;
+}
+
+.parallax-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 130%;
+  height: 100%;
+  -webkit-background-size: cover;
+
+  background-size: cover;
+  background-position: center;
+}
+
+.swiper-slide .title {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.swiper-slide .subtitle {
+  font-size: 50px;
+}
+
+.swiper-slide .text {
+  font-size: 20px;
+  max-width: 400px;
+  line-height: 1.3;
+}
+.text {
+  transform: translate(0, 20px);
+  transform: all 0.8s ease 1s;
+}
+
+.icon-image {
+  animation: 3s ease-in 1s infinite reverse both running slidein;
+  animation-duration: 4s;
+  transition: width 2s, height 2s, transform 2s;
+}
+.icon-image:hover {
+  transform: rotate(60deg);
+}
+@media screen and (max-width: 480px) {
+  .icon-image {
+    width: 180px;
+  }
+}
